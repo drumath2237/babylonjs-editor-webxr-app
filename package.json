@@ -1,11 +1,12 @@
 {
-    "name": "babylonjs-editor-generated-template",
-    "version": "3.2.1-beta.4",
+    "name": "babylonjs-editor-webxr-app",
+    "version": "0.1.0",
     "description": "Generated Template by BabylonJS Editor v3.0",
     "scripts": {
         "clean": "rimraf build && rimraf declaration",
         "compile": "tsc -p .",
-        "build": "webpack --mode production",
+        "build": "cross-env BUILD_IN=\"editor\" webpack --mode production",
+        "build:ci": "cross-env BUILD_IN=\"shell\" webpack --mode production",
         "watch": "webpack --mode development --watch",
         "webserver": "http-server -p 1338 -c-1"
     },
