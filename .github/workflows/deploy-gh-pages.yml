@@ -38,7 +38,7 @@ jobs:
           mkdir ./public/node_modules
           cp -r ./dist ./public/dist
           cp -r ./scenes ./public/scenes
-          cp -r ./node_moduels/cannon ./public/node_moduels/cannon
+          cp -r ./node_modules/cannon ./public/node_modules/cannon
           cp index.html ./public/index.html
 
       - name: Deploy
