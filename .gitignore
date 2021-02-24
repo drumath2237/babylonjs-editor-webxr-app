@@ -88,3 +88,7 @@ typings/
 .dynamodb/
 
 dist/
+
+*.crt
+
+*.pem
