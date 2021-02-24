@@ -9,7 +9,13 @@ var Game = /** @class */ (function () {
      */
     function Game() {
         this.engine = new core_1.Engine(document.getElementById("renderCanvas"), true);
-        this.scene = new core_1.Scene(this.engine);
+        // this.scene = new Scene(this.engine);
+        var scene = new core_1.Scene(this.engine);
+        var env = scene.createDefaultEnvironment();
+        var xr = scene.createDefaultXRExperienceAsync({
+            floorMeshes: [env.ground]
+        });
+        this.scene = scene;
         this._bindEvents();
         this._load();
     }

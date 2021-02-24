@@ -18,7 +18,16 @@ export class Game {
      */
     public constructor() {
         this.engine = new Engine(document.getElementById("renderCanvas") as HTMLCanvasElement, true);
-        this.scene = new Scene(this.engine);
+        // this.scene = new Scene(this.engine);
+
+        const scene = new Scene(this.engine);
+        const env = scene.createDefaultEnvironment();
+
+        const xr = scene.createDefaultXRExperienceAsync({
+            floorMeshes: [env.ground]
+        });
+
+        this.scene = scene;
 
         this._bindEvents();
         this._load();
