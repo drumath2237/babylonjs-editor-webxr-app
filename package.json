@@ -13,13 +13,14 @@
     "devDependencies": {
         "@types/node": "13.9.2",
         "@types/webpack": "4.1.4",
-        "typescript": "3.8.3",
-        "http-server": "0.12.1",
-        "webpack": "4.41.2",
-        "webpack-cli": "3.3.10",
-        "ts-loader": "4.4.2",
         "babel-loader": "8.0.4",
-        "babylonjs-editor-webpack-progress": "1.0.1"
+        "babylonjs-editor-webpack-progress": "1.0.1",
+        "cross-env": "^7.0.3",
+        "http-server": "0.12.1",
+        "ts-loader": "4.4.2",
+        "typescript": "3.8.3",
+        "webpack": "4.41.2",
+        "webpack-cli": "3.3.10"
     },
     "dependencies": {
         "rimraf": "~2.6.2",
