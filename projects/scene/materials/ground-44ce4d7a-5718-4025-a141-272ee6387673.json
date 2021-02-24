@@ -43,7 +43,6 @@
 	"invertNormalMapY": false,
 	"twoSidedLighting": false,
 	"id": "44ce4d7a-5718-4025-a141-272ee6387673",
-	"uniqueId": 74,
 	"name": "ground",
 	"checkReadyOnEveryCall": false,
 	"checkReadyOnlyOnce": false,

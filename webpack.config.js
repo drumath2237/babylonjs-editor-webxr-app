@@ -41,7 +41,7 @@ module.exports = (_, argv) => {
 				/\.js$/,
 				/\.d\.ts$/
 			]),
-			editor.createProgressPlugin(new webpack.ProgressPlugin()),
+			// editor.createProgressPlugin(new webpack.ProgressPlugin()),
 		],
 		optimization: {
 			minimize: false,

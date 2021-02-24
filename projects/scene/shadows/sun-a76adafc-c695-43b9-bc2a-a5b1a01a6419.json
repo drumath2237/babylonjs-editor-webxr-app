@@ -1,6 +1,7 @@
 {
 	"className": "CascadedShadowGenerator",
 	"lightId": "a76adafc-c695-43b9-bc2a-a5b1a01a6419",
+	"id": "a76adafc-c695-43b9-bc2a-a5b1a01a6419",
 	"mapSize": 1024,
 	"forceBackFacesOnly": false,
 	"darkness": 0,

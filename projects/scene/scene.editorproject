@@ -6,16 +6,16 @@
 	"materials": [
 		{
 			"bindedMeshes": [
-				"e22f3d3a-65b2-4993-8c52-cb05d2af8278"
+				"0ea78d97-3c1f-4911-8d78-2b4cd65a0424"
 			],
-			"json": "cube-03bdd37e-fe54-4095-a392-0de62b0de089.json",
+			"json": "ground-44ce4d7a-5718-4025-a141-272ee6387673.json",
 			"isMultiMaterial": false
 		},
 		{
 			"bindedMeshes": [
-				"0ea78d97-3c1f-4911-8d78-2b4cd65a0424"
+				"e22f3d3a-65b2-4993-8c52-cb05d2af8278"
 			],
-			"json": "ground-44ce4d7a-5718-4025-a141-272ee6387673.json",
+			"json": "cube-03bdd37e-fe54-4095-a392-0de62b0de089.json",
 			"isMultiMaterial": false
 		},
 		{
@@ -33,12 +33,15 @@
 		"sky-6a927ea7-51d9-4248-9b80-4d34b53b386e.json"
 	],
 	"transformNodes": [],
+	"particleSystems": [],
 	"lights": [
 		{
 			"json": "sun-a76adafc-c695-43b9-bc2a-a5b1a01a6419.json",
 			"shadowGenerator": "sun-a76adafc-c695-43b9-bc2a-a5b1a01a6419.json"
 		}
 	],
+	"sounds": [],
+	"morphTargetManagers": [],
 	"scene": {
 		"autoClear": false,
 		"clearColor": [
@@ -109,11 +112,68 @@
 		},
 		"animations": [],
 		"postProcessesEnabled": true,
+		"metadata": {
+			"script": {},
+			"postProcesses": {
+				"ssao": {
+					"enabled": true,
+					"json": {
+						"tags": null,
+						"totalStrength": 2,
+						"maxZ": 1000,
+						"minZAspect": 0.2,
+						"samples": 32,
+						"textureSamples": 1,
+						"_ratio": {
+							"ssaoRatio": 0.5,
+							"blurRatio": 0.5
+						},
+						"expensiveBlur": false,
+						"radius": 1,
+						"base": 0,
+						"_name": "ssao",
+						"customType": "SSAO2RenderingPipeline"
+					}
+				},
+				"screenSpaceReflections": {
+					"enabled": false
+				},
+				"default": {
+					"enabled": true,
+					"json": {
+						"tags": null,
+						"sharpenEnabled": false,
+						"bloomKernel": 64,
+						"_bloomWeight": 0.15,
+						"_bloomThreshold": 0.9,
+						"_hdr": {},
+						"bloomWeight": 0.15,
+						"bloomThreshold": 0.9,
+						"bloomScale": 0.5,
+						"bloomEnabled": false,
+						"depthOfFieldEnabled": false,
+						"depthOfFieldBlurLevel": 0,
+						"fxaaEnabled": true,
+						"samples": 4,
+						"imageProcessingEnabled": true,
+						"glowLayerEnabled": false,
+						"chromaticAberrationEnabled": false,
+						"grainEnabled": false,
+						"_name": "default",
+						"customType": "DefaultRenderingPipeline"
+					}
+				},
+				"motionBlur": {
+					"enabled": false
+				}
+			}
+		},
 		"environmentIntensity": 1,
 		"shadowGenerators": [
 			{
 				"className": "CascadedShadowGenerator",
 				"lightId": "a76adafc-c695-43b9-bc2a-a5b1a01a6419",
+				"id": "a76adafc-c695-43b9-bc2a-a5b1a01a6419",
 				"mapSize": 1024,
 				"forceBackFacesOnly": false,
 				"darkness": 0,
@@ -151,11 +211,13 @@
 				"minDistance": 0,
 				"maxDistance": 1
 			}
-		]
+		],
+		"sounds": []
 	},
 	"assets": {
 		"meshes": [],
-		"prefabs": []
+		"prefabs": [],
+		"graphs": []
 	},
 	"project": {
 		"camera": {
@@ -166,11 +228,6 @@
 			"target": [
 				0,
 				0.5194425582885742,
-				0
-			],
-			"upVector": [
-				0,
-				1,
 				0
 			],
 			"inertialAlphaOffset": 0,
@@ -205,9 +262,14 @@
 				1.7259982497941502,
 				3.5372875206428613
 			],
+			"upVector": [
+				0,
+				1,
+				0
+			],
 			"fov": 0.8,
 			"minZ": 1,
-			"maxZ": 10000,
+			"maxZ": 15000,
 			"inertia": 0.9,
 			"mode": 0,
 			"layerMask": 268435455,
@@ -215,10 +277,10 @@
 			"cameraRigMode": 0,
 			"name": "Editor Camera",
 			"id": "f3684fb1-6ae4-4cc0-8e94-ba283d86ec04",
-			"uniqueId": 3,
 			"state": "",
 			"metadata": {
-				"script": {}
+				"script": {},
+				"detached": false
 			},
 			"type": "ArcRotateCamera",
 			"inputsmgr": {
@@ -291,45 +353,8 @@
 				"customType": "SSAO2RenderingPipeline"
 			}
 		},
-		"standard": {
-			"enabled": true,
-			"json": {
-				"tags": null,
-				"_name": "standard",
-				"brightThreshold": 1,
-				"blurWidth": 512,
-				"horizontalBlur": false,
-				"exposure": 1,
-				"volumetricLightCoefficient": 0.2,
-				"volumetricLightPower": 4,
-				"volumetricLightBlurScale": 64,
-				"hdrMinimumLuminance": 1,
-				"hdrDecreaseRate": 0.5,
-				"hdrIncreaseRate": 0.5,
-				"hdrAutoExposure": false,
-				"lensFlareStrength": 20,
-				"lensFlareGhostDispersal": 1.4,
-				"lensFlareHaloWidth": 0.7,
-				"lensFlareDistortionStrength": 16,
-				"lensFlareBlurWidth": 512,
-				"depthOfFieldDistance": 10,
-				"depthOfFieldBlurWidth": 64,
-				"motionStrength": 0.2,
-				"objectBasedMotionBlur": false,
-				"_ratio": 1,
-				"BloomEnabled": false,
-				"DepthOfFieldEnabled": false,
-				"LensFlareEnabled": false,
-				"HDREnabled": false,
-				"VLSEnabled": false,
-				"MotionBlurEnabled": true,
-				"fxaaEnabled": false,
-				"screenSpaceReflectionsEnabled": false,
-				"volumetricLightStepsCount": 50,
-				"motionBlurSamples": 64,
-				"samples": 1,
-				"customType": "StandardRenderingPipeline"
-			}
+		"screenSpaceReflections": {
+			"enabled": false
 		},
 		"default": {
 			"enabled": true,
@@ -355,6 +380,10 @@
 				"_name": "default",
 				"customType": "DefaultRenderingPipeline"
 			}
+		},
+		"motionBlur": {
+			"enabled": false
 		}
-	}
+	},
+	"physicsEnabled": true
 }

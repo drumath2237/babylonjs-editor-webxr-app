@@ -38,7 +38,6 @@
 	"cameraRigMode": 0,
 	"name": "camera",
 	"id": "05e93a47-ec25-41ad-a1df-16f279c32246",
-	"uniqueId": 75,
 	"state": "",
 	"metadata": {
 		"script": {}
@@ -48,22 +47,22 @@
 		"FreeCameraKeyboardMoveInput": {
 			"tags": null,
 			"keysUp": [
-				38
+				87
 			],
 			"keysUpward": [
 				33
 			],
 			"keysDown": [
-				40
+				83
 			],
 			"keysDownward": [
 				34
 			],
 			"keysLeft": [
-				37
+				65
 			],
 			"keysRight": [
-				39
+				68
 			]
 		},
 		"FreeCameraMouseInput": {
