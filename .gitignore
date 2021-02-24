@@ -92,3 +92,5 @@ dist/
 *.crt
 
 *.pem
+
+public/
