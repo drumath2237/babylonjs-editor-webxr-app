@@ -28,6 +28,9 @@ WebXRデバイスでデバッグする際はshell上でビルドするように�
 
 ## Build & Run
 
+ビルドと実行はEditorとシェル上で行うことができますが、現時点ではシェル上でないとWebXR APIが呼び出せません......。
+WebXR APIはlocalhostであってもhttpsが必須なため、http-serverを実行する前にTLS/SSL証明書が必要になります。（証明書作成は最初に一回だけ行えば大丈夫です。ローカルIPが変わらなければ。）
+
 ### Using BabylonJs Editor
 
 Buildボタンを押した後にPlayボタンを押すことで実行できます。
@@ -37,6 +40,11 @@ Buildボタンを押した後にPlayボタンを押すことで実行できま�
 ```bash
 # build in terminal
 npm run build:ci
+
+# to debug webxr api in localhost,
+# create TLS/SSL certification file at once
+# ref: https://github.com/http-party/http-server#tlsssl
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.crt
 
 # run in browser
 npm run webserver
