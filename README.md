@@ -2,6 +2,8 @@
 
 # BabylonJs Editor WebXR App
 
+![img](Documents/img/quest-babylonjs-webxr2.gif)
+
 ## About
 
 BabylonJs EditorでWebXR対応アプリを作るサンプルプロジェクトです。
