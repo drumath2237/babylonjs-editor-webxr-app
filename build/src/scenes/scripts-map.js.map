@@ -1,1 +1,1 @@
-{"version":3,"file":"scripts-map.js","sourceRoot":"","sources":["../../../src/scenes/scripts-map.ts"],"names":[],"mappings":";;AASA;;GAEG;AACU,QAAA,UAAU,GAAoB,EAE1C,CAAA"}
+{"version":3,"file":"scripts-map.js","sourceRoot":"","sources":["../../../src/scenes/scripts-map.ts"],"names":[],"mappings":";;AASA;;GAEG;AACU,QAAA,UAAU,GAAoB;IAC1C,2BAA2B,EAAE,OAAO,CAAC,eAAe,CAAC;CACrD,CAAA"}

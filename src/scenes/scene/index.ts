@@ -20,7 +20,7 @@ export async function runScene(scene: Scene, rootUrl?: string): Promise<void> {
     attachScripts(scriptsMap, scene);
 
     // Configure post-processes
-    // configurePostProcesses(scene, rootUrl);
+    configurePostProcesses(scene, rootUrl);
 
     // Rendering groups
     setupRenderingGroups(scene);

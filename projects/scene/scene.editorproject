@@ -28,11 +28,13 @@
 	],
 	"textures": [],
 	"meshes": [
-		"ground-0ea78d97-3c1f-4911-8d78-2b4cd65a0424.json",
 		"cube-e22f3d3a-65b2-4993-8c52-cb05d2af8278.json",
+		"ground-0ea78d97-3c1f-4911-8d78-2b4cd65a0424.json",
 		"sky-6a927ea7-51d9-4248-9b80-4d34b53b386e.json"
 	],
-	"transformNodes": [],
+	"transformNodes": [
+		"SceneConfig-976fd505-0e5f-4e41-bb28-b95fb87bbd5f.json"
+	],
 	"particleSystems": [],
 	"lights": [
 		{
@@ -222,8 +224,8 @@
 	"project": {
 		"camera": {
 			"tags": "modified",
-			"alpha": 2.469171247720734,
-			"beta": 1.3614465403869094,
+			"alpha": 2.035680962452532,
+			"beta": 1.4186384450979712,
 			"radius": 5.805663043258613,
 			"target": [
 				0,
@@ -258,9 +260,9 @@
 			],
 			"speed": 2,
 			"position": [
-				-4.442695547914423,
-				1.7259982497941502,
-				3.5372875206428613
+				-2.572721143742412,
+				1.39941523051605,
+				5.12956892774943
 			],
 			"upVector": [
 				0,

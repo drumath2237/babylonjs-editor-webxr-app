@@ -21,6 +21,16 @@
 	"Sounds": [],
 	"Scripts": [
 		{
+			"id": "SceneConfig.ts",
+			"key": "SceneConfig.ts",
+			"base64": "../css/images/ts.png",
+			"style": {
+				"borderColor": "#2FA1D6",
+				"borderStyle": "solid",
+				"borderWidth": "2px"
+			}
+		},
+		{
 			"id": "decorators.ts",
 			"key": "decorators.ts",
 			"base64": "../css/images/ts.png",
