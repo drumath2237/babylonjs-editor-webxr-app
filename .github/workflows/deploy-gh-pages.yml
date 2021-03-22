@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: build project
-        run: npm run build:ci -- --progress
+        run: npm run build:ci
 
       - name: copy files to public
         run: |
