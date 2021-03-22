@@ -25,8 +25,9 @@ BabylonJs EditorはUnityのようなGUIエディタ上でシーンを構築し�
 
 リポジトリをクローンし、BabylonJs EditorでOpen Workspaceから`workspace.editorworkspace`を指定することでプロジェクトを開くことができます。
 
-**※現時点ではエディタでビルドしたときに`/src/scenes/scene/index.ts`が書き変わってしまうことによりパフォーマンスが極端に低下してしまいます。
-WebXRデバイスでデバッグする際はshell上でビルドするようにしてください。**
+**~~※現時点ではエディタでビルドしたときに`/src/scenes/scene/index.ts`が書き変わってしまうことによりパフォーマンスが極端に低下してしまいます。
+WebXRデバイスでデバッグする際はshell上でビルドするようにしてください。~~**
+解決。
 
 ## Build & Run
 
